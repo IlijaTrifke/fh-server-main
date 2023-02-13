@@ -35,7 +35,7 @@ const PrijaveSchema = new mongoose.Schema({
         type: String,
         required: [true, "Status takmičara je obavezan!"],
       },
-      imeSkoleFirme: {
+      imeSkole: {
         type: String,
         required: [
           true,

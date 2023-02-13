@@ -74,7 +74,7 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
             "\n" +
             prijava.clanovi[0].status +
             "\n" +
-            prijava.clanovi[0].godinaStudija +
+            prijava.clanovi[0].imeSkole +
             "\n" +
             prijava.clanovi[0].linkCV +
             "\n" +
@@ -87,7 +87,7 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
             "\n" +
             prijava.clanovi[1].status +
             "\n" +
-            prijava.clanovi[1].godinaStudija +
+            prijava.clanovi[1].imeSkole +
             "\n" +
             prijava.clanovi[1].linkCV +
             "\n" +
@@ -100,7 +100,7 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
             "\n" +
             prijava.clanovi[2].status +
             "\n" +
-            prijava.clanovi[2].godinaStudija +
+            prijava.clanovi[2].imeSkole +
             "\n" +
             prijava.clanovi[2].linkCV +
             "\n" +
@@ -113,7 +113,7 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
             "\n" +
             prijava.clanovi[3].status +
             "\n" +
-            prijava.clanovi[3].godinaStudija +
+            prijava.clanovi[3].imeSkole +
             "\n" +
             prijava.clanovi[3].linkCV +
             "\n" +
