@@ -39,7 +39,7 @@ const PrijaveSchema = new mongoose.Schema({
         type: String,
         required: [
           true,
-          "Godina studija i naziv škole/firme takmičara su obavezni!",
+          "Godina studija i naziv studije/srednje škole takmičara su obavezni!",
         ],
       },
       linkCV: {
