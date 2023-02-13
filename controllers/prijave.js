@@ -47,12 +47,8 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
   });
   console.log(auth);
   const client = await auth.getClient();
-  const spreadsheetId = "1cKI5yRESxBHJmPWcEUjeGOTjD0M9mCDv-Tsql63DPHo";
+  const spreadsheetId = "1M8VkcA6iv1mBVjo9VZNGYX212TSySPBJ23AmkwcP_E4";
   const googleSheets = google.sheets({ version: "v4", auth: client });
-  const metaData = await googleSheets.spreadsheets.get({
-    auth: auth,
-    spreadsheetId: spreadsheetId,
-  });
 
   await googleSheets.spreadsheets.values.append({
     auth,
