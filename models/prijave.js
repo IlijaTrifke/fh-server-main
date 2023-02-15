@@ -46,10 +46,6 @@ const PrijaveSchema = new mongoose.Schema({
         type: String,
         required: [true, "Link do CV-a takmičara je obavezan!"],
       },
-      linkGit: {
-        type: String,
-        required: [true, "Link do Git-a takmičara je obavezan!"],
-      },
     },
   ],
 });
