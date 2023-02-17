@@ -1,6 +1,7 @@
 const Prijave = require("../models/prijave");
 const asyncWrapper = require("../errors/asyncWrapper.js");
 const customError = require("../errors/customError");
+const { google } = require("googleapis");
 const nodemailer = require("nodemailer");
 
 let transporter = nodemailer.createTransport({
