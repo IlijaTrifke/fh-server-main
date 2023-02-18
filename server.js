@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
+const mongoose = require("mongoose");
 
 const corsOptions = {
   origin: "*",
@@ -36,7 +37,7 @@ app.use(errorHandlerMiddleware);
 const startServer = async () => {
   let PORT = process.env.PORT || 5001;
   try {
-    await connectDB(process.env.MONGO_URI, () => {
+    await mongoose.connect(process.env.MONGO_URI, () => {
       app.listen(PORT, () => {
         console.log("server on port: " + PORT);
       });
