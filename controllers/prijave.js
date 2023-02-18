@@ -25,7 +25,7 @@ const sendEmail = (to, subject, html) => {
   let mailOptions = {
     from: process.env.EMAIL,
     to,
-    cc: "",
+    cc: "tijana.lazic@fonis.rs",
     subject,
     html,
   };
