@@ -34,11 +34,12 @@ app.use(errorHandlerMiddleware);
 
 //server start
 const startServer = async () => {
+  let PORT = process.env.PORT || 5001;
   try {
-    await connectDB(process.env.MONGO_URI);
-    let PORT = process.env.PORT || 5001;
-    app.listen(PORT, () => {
-      console.log("server on port: " + PORT);
+    await connectDB(process.env.MONGO_URI, () => {
+      app.listen(PORT, () => {
+        console.log("server on port: " + PORT);
+      });
     });
   } catch (error) {
     console.log(`There is a problem with a server:${error}`);
