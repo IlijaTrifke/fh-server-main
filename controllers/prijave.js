@@ -46,7 +46,7 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
   // uslovi ukoliko bude trebalo
 
   const auth = new google.auth.GoogleAuth({
-    keyFile: "credentials.json",
+    keyFile: "../credentials.json",
     scopes: "https://www.googleapis.com/auth/spreadsheets",
   });
   console.log(auth);
