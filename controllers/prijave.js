@@ -102,18 +102,17 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
             "\n" +
             prijava.clanovi[2].linkCV,
 
-          clanovi[3] !== null &&
-            prijava.clanovi[3].imePrezime +
-              "\n" +
-              prijava.clanovi[3].email +
-              "\n" +
-              prijava.clanovi[3].brojTelefona +
-              "\n" +
-              prijava.clanovi[3].status +
-              "\n" +
-              prijava.clanovi[3].imeSkole +
-              "\n" +
-              prijava.clanovi[3].linkCV,
+          prijava.clanovi[3].imePrezime +
+            "\n" +
+            prijava.clanovi[3].email +
+            "\n" +
+            prijava.clanovi[3].brojTelefona +
+            "\n" +
+            prijava.clanovi[3].status +
+            "\n" +
+            prijava.clanovi[3].imeSkole +
+            "\n" +
+            prijava.clanovi[3].linkCV,
         ],
       ],
     },
