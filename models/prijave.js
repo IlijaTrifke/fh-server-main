@@ -17,6 +17,9 @@ const PrijaveSchema = new mongoose.Schema({
     type: String,
     required: [true, "Pitanje 4 je obavezno!"],
   },
+  vesti: {
+    type: Boolean,
+  },
   clanovi: [
     {
       imePrezime: {

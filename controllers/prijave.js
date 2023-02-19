@@ -67,6 +67,7 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
           prijava.pitanje2,
           prijava.pitanje3,
           prijava.pitanje4,
+          prijava.vesti,
           prijava.clanovi[0].imePrezime +
             "\n" +
             prijava.clanovi[0].email +
