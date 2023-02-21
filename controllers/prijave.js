@@ -120,9 +120,9 @@ const napraviPrijavu = asyncWrapper(async (req, res, next) => {
     },
   });
 
-  let emails = "";
+  let emails = [];
   for (let i = 0; i < prijava.clanovi.length; i++) {
-    emails += prijava.clanovi[i].email + ", ";
+    emails.push(prijava.clanovi[i].email);
   }
   sendEmail(emails, potvrdaMail.subject, potvrdaMail.html);
   await Prijave.create(prijava);
